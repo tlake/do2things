@@ -1,18 +1,33 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
-    <head>
+<head>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 
-        <title>
-            Do Two Things!
-        </title>
+    <title>
+        Do Two Things!
+    </title>
+</head>
 
-        <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+<body>
 
-    </head>
-    <body>
+<div id='navbar'>
+    <nav>
+        <h1 id='nav_brand'>
+            <a class='nav_link' href="{% url 'home' %}">do2things</a>
+        </h1>
 
-    {% block body %}
+        <p class='nav_note'>
+        a django project by
+        <a class='nav_link' href="http://tannerjlake.com">tanner lake</a>
+        </p>
+    </nav>
+</div>
+
+<div id='main'>
+    {% block main %}
     {% endblock %}
+</div>
 
-    </body>
+</body>
 </html>

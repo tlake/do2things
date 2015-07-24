@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
-{% block body %}
+{% block main %}
 
 <form action="{% url 'decohere' %}" method='POST'>
+    {% csrf_token %}
 
     {{ form }}
 
