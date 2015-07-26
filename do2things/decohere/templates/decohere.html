@@ -2,12 +2,14 @@
 
 {% block main %}
 
-<form action="{% url 'decohere' %}" method='POST'>
+<form id='decoherence_form' action="{% url 'decohere' %}" method='POST'>
     {% csrf_token %}
 
     {{ form }}
 
-    <input type='submit' value='Decohere Me!' />
+    <button class='main_link' type='submit'>
+        <span class='link_title'>Decohere Me!</span>
+    </button>
 
 </form>
 

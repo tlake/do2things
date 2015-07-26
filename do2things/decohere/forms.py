@@ -1,20 +1,22 @@
 from django.forms import ModelForm, TextInput
-from decohere.models import TwoThings
+from decohere.models import Decoherence
 
 
-class TwoThingsForm(ModelForm):
+class DecoherenceForm(ModelForm):
     class Meta:
-        model = TwoThings
-        fields = ['thing_1', 'thing_2']
+        model = Decoherence
+        fields = ['state1', 'state2']
 
         widgets = {
-            'thing_1': TextInput(attrs={
-                'id': 'thing_1',
-                'class': 'twothings',
+            'state1': TextInput(attrs={
+                'id': 'state1',
+                'class': 'option_text',
+                'placeholder': 'one possible state',
             }),
 
-            'thing_2': TextInput(attrs={
-                'id': 'thing_2',
-                'class': 'twothings',
+            'state2': TextInput(attrs={
+                'id': 'state2',
+                'class': 'option_text',
+                'placeholder': 'another possible state',
             }),
         }

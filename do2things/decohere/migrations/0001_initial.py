@@ -11,11 +11,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='TwoThings',
+            name='Decoherence',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('thing_1', models.CharField(max_length=127)),
-                ('thing_2', models.CharField(max_length=127)),
+                ('state1', models.CharField(max_length=127)),
+                ('state2', models.CharField(max_length=127)),
+                ('date_created', models.DateTimeField(auto_now_add=True)),
+                ('decohered', models.CharField(max_length=127, blank=True)),
             ],
         ),
     ]

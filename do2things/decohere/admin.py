@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import TwoThings
+from .models import Decoherence
 
-admin.site.register(TwoThings)
+admin.site.register(Decoherence)
