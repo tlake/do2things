@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form id='decoherence_form' action="{% url 'decohere' %}" method='POST'>
+    {% csrf_token %}
+
+    {{ form }}
+
+    <button class='main_link' type='submit'>
+        <span class='link_title'>Decohere Me!</span>
+    </button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div class='main_text_container'>
+
+    <p class='main_text decohered_text'>
+    Congratulations! If your pre-commitment holds strong, you've
+    successfully decohered us all into the universe where you've taken
+    the following action:
+    </p>
+
+    <p id='decohered_result' class='main_text decohered_text'>
+    {{ decohered }}
+    </p>
+
+</div>
+<div class='main_text_container'>
+
+    <p class='main_text decohered_text'>
+    I hope you haven't doomed us all.
+    </p>
+
+</div>
+
+<a class='main_link'
+    id='home_decohere_btn'
+    href="{% url 'decohere' %}"
+>
+    <span class='link_subtitle'>I'm drunk with power.</span>
+    <br/>
+    <span class='link_title'>Decohere Again!</span>
+</a>
+
+{% endblock %}

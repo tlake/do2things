@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div class='main_text_container'>
+
+    <p class='main_text'>
+    You've got a choice between two different actions. For whatever
+    reason, you've decided not to make that choice yourself.
+    </p>
+
+    <p class='main_text'>
+    Here, you can input those two options and let the observance of
+    quantum phenomena make your decision for you. All it takes on your
+    part is an iron-clad pre-commitment to carry out whichever option is
+    returned to you.
+    </p>
+
+    <p class='main_text'>
+    By participating, you will decohere this universe into one of two
+    possible states; the state where you perform one action, or the
+    state where you perform the other. This is a big responsibility.
+    </p>
+
+    <p class='main_text'>
+    Are you ready?
+    </p>
+
+</div>
+
+<a class='main_link'
+    id='home_decohere_btn'
+    href="{% url 'decohere' %}"
+>
+    <span class='link_subtitle'>I'm ready.</span>
+    <br/>
+    <span class='link_title'>Decohere Me!</span>
+</a>
+
+{% endblock %}
