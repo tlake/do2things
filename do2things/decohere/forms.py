@@ -6,6 +6,10 @@ class DecoherenceForm(ModelForm):
     class Meta:
         model = Decoherence
         fields = ['state1', 'state2']
+        labels = {
+            'state1': '',
+            'state2': '',
+        }
 
         widgets = {
             'state1': TextInput(attrs={
