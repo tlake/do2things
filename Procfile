@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath do2things do2things.wsgi --log-file /tmp/gunicorn.log --error-logfile /tmp/gunicorn-error.log
