@@ -131,10 +131,6 @@ Styling placeholder text, cross-browser
     padding: 10px;
 }
 
-label {
-    display: none;
-}
-
 #state1 {
     float: left;
     position: relative;
