@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name do2things.tannerjlake.com;
+    access_log /var/log/nginx/do2things_site.log;
+    error_log /var/log/nginx/do2things_site_error.log;
+
+    location / {
+        proxy_pass http://127.0.0.1:5003;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded_For $proxy_add_x_forwarded_for;
+    }
+}
+

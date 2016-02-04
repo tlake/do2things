@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'sooper seekrit'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'do2things.herokuapp.com', '*']
 
@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'do2things.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'do2things',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'do2things_db',
+        'USER': 'ubuntu',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '',
     }
