@@ -1,166 +1,192 @@
+/* line 1, ../sass/style.sass */
 html {
-    background-color: #000;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
+/* line 8, ../sass/style.sass */
 body {
-    background-color: #000;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
+/* line 15, ../sass/style.sass */
 #navbar {
-    margin: -10px -8px;
-    background-color: #000000;
-    border-bottom: 1px #ccc solid;
-    position: relative;
-    z-index: 2;
+  margin: -10px -8px;
+  background-color: #000000;
+  border-bottom: 1px #ccc solid;
+  position: relative;
+  z-index: 2;
 }
 
+/* line 22, ../sass/style.sass */
 #nav_brand {
-    margin-right: 20%;
-    display: inline-block;
-    text-align: left;
+  margin-right: 20%;
+  display: inline-block;
+  text-align: left;
 }
 
+/* line 27, ../sass/style.sass */
 #nav_note {
-    font-size: 1rem;
-    color: #eee;
-    margin-left: 20%;
-    display: inline-block;
-    text-align: right;
+  font-size: 1rem;
+  color: #eee;
+  margin-left: 20%;
+  display: inline-block;
+  text-align: right;
 }
 
+/* line 34, ../sass/style.sass */
 .nav_link:visited {
-    color: #eee;
+  color: #eee;
 }
 
+/* line 37, ../sass/style.sass */
 #main {
-    clear: both;
-    margin: -20px 0 0;
-    width: 100%;
-    padding-top: 40px;
-    background: #444 url("../img/background.jpg") center;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
-    height: 100%;
+  clear: both;
+  margin: -20px 0 0;
+  width: 100%;
+  padding-top: 40px;
+  background: #444 url("../img/background.jpg") center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  height: 100%;
 }
 
+/* line 48, ../sass/style.sass */
 .main_text_container {
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 10px 40px;
-    border-radius: 10px;
-    border: 1px #333 solid;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    top: 30px;
-    margin-bottom: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 1px #333 solid;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 30px;
+  margin-bottom: 100px;
 }
 
+/* line 59, ../sass/style.sass */
 .main_text {
-    font-size: 1.2rem;
-    color: #eee;
-    text-align: justify;
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: justify;
 }
 
+/* line 64, ../sass/style.sass */
 .main_link {
-    text-decoration: none;
-    border: 2px #ccc solid;
-    border-radius: 5px;
-    color: #ccc;
-    background-color: #000;
-    padding: 10px;
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    padding: 10px 0;
+  text-decoration: none;
+  border: 2px #ccc solid;
+  border-radius: 5px;
+  color: #ccc;
+  background-color: #000;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding: 10px 0;
 }
-
+/* line 75, ../sass/style.sass */
 .main_link:hover {
-    background-color: #ccc;
-    color: #000;
+  background-color: #ccc;
+  color: #000;
 }
 
+/* line 79, ../sass/style.sass */
 form {
-    position: relative;
-    top: 100px;
+  position: relative;
+  top: 100px;
 }
 
 /***************
-****************
-Styling placeholder text, cross-browser
-****************
-***************/
-
-::-webkit-input-placeholder { /* WebKit browsers */
-    color: rgba(250, 250, 250, 0.5);
-    font-style: italic;
+ *****************
+ *Styling placeholder text, cross-browser
+ *****************
+ *************** */
+/* line 89, ../sass/style.sass */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: rgba(250, 250, 250, 0.5);
+  font-style: italic;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: rgba(250, 250, 250, 0.5);
-    font-style: italic;
-   /*opacity:  1;*/
+/* line 94, ../sass/style.sass */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgba(250, 250, 250, 0.5);
+  font-style: italic;
+  /*opacity:  1; */
 }
 
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: rgba(250, 250, 250, 0.5);
-    font-style: italic;
-   /*opacity:  1;*/
+/* line 100, ../sass/style.sass */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgba(250, 250, 250, 0.5);
+  font-style: italic;
+  /*opacity:  1; */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: rgba(250, 250, 250, 0.5);
-    font-style: italic;
+/* line 106, ../sass/style.sass */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: rgba(250, 250, 250, 0.5);
+  font-style: italic;
 }
 
+/* line 111, ../sass/style.sass */
 .option_text {
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    border: 1px #eee solid;
-    border-radius: 2px;
-    font-size: 1.4rem;
-    color: #eee;
-    padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border: 1px #eee solid;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 10px;
 }
 
+/* line 120, ../sass/style.sass */
 #state1 {
-    float: left;
-    position: relative;
-    right: -20%;
+  float: left;
+  position: relative;
+  right: -20%;
 }
 
+/* line 125, ../sass/style.sass */
 #state2 {
-    float: right;
-    position: relative;
-    left: -20%;
+  float: right;
+  position: relative;
+  left: -20%;
 }
 
+/* line 130, ../sass/style.sass */
 .decohered_text {
-    text-align: center;
+  text-align: center;
 }
 
+/* line 133, ../sass/style.sass */
 #decohered_result {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #eee;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eee;
 }
 
+/* line 138, ../sass/style.sass */
 .link_subtitle {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
+/* line 141, ../sass/style.sass */
 .link_title {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
+/* line 144, ../sass/style.sass */
 .errorlist {
-    display: none;
+  display: none;
 }
